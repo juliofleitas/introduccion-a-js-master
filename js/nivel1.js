@@ -363,8 +363,86 @@ console.log("Usted tiene " + edad + " años");
 */
 
 
+/* Tarea 1
+- Crear una función que tome como parámetro el año actual y el año de nacimiento y calcule la edad del usuario (más o menos).
+- Preguntarle estos datos al usuario y guardarlos en 2 variables.
+- Ejecutar la función con estos datos.
+- Imprimir el resultado en la consola.
+*/
+
+/*
+
+function calcularEdadUsuario (anioActual, anioNacimiento) {
+    return anioActual - anioNacimiento;
+} 
+
+let anioActual = Number (prompt("Ingrese el año actual: "));
+const ANIODENACIMIENTO = Number (prompt("Ingrese su año de nacimiento:"));
+
+let edad = calcularEdadUsuario(anioActual, ANIODENACIMIENTO);
+
+console.log("Usted tiene " + edad + " años");
+
+*/
+
+/*tarea 2
+-Preguntar el salario anual y calcular el salario mensual
+-Preguntar el salario mensual y calcular el salario anual, diario, semanal, por hora.
+*/
+
+/*
+
+const MESES_AL_ANIO = 12;
+
+function calcularSalarioMensual(salarioAnual) {
+    return Math.floor(salarioAnual / MESES_AL_ANIO);
+}
+
+function calcularSalarioAnual(salarioMensual) {
+    return salarioMensual * MESES_AL_ANIO;
+}
+
+function calcularSalarioSemanal(salarioMensual) {
+    return salarioMensual / 4;
+}
+
+function calcularSalarioDiario(salarioMensual) {
+    return salarioMensual / 30;
+}
+
+function calcularSalarioPorHora(salarioMensual) {
+    return salarioMensual / 720;
+}
+
+function main () {
+    const salarioAnual = Number(prompt("Ingrese su salario anual"));
+
+    const salarioMensual = calcularSalarioMensual(salarioAnual);
+
+    console.log("Su salario mensual es de " + salarioMensual + "$");
+
+    const salarioAnualCalculado = calcularSalarioAnual(salarioMensual);
+    console.log("Su salario anual es de " + salarioAnualCalculado + "$");
+
+    const salarioSemanal = calcularSalarioSemanal(salarioMensual);
+    console.log("Su salario semanal es de " + salarioSemanal + "$");
+
+    const salarioDiario = calcularSalarioDiario(salarioMensual).toFixed(2);
+    console.log("Su salario diario es de " + salarioDiario + "$");
+
+    const salarioPorHora = calcularSalarioPorHora(salarioMensual).toFixed(2);
+    console.log("Su salario por hora es de " + salarioPorHora + "$");
+
+}
+
+main();
+
+*/
+
+/*
+
 let salarioAnual = Number(prompt('Cual es su salario anual'));
-const MESESDEUNANIO = 12;
+const MESES_DE_UN_ANIO = 12;
 
 function calcularSalarioMensual(salarioAnual){
   return salarioAnual / MESESDEUNANIO;
@@ -418,6 +496,10 @@ console.log(
   " su salario por hora sera de " +
   calcularSalarioPorHora(salarioMensual)
 );
+
+*/
+
+
 
 /*
     Condicionales If-Else
