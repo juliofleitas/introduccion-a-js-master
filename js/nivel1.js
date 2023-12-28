@@ -345,6 +345,7 @@ console.log(
 - Imprimir el resultado en la consola.
 */
 
+/*
 function calcularEdadUsuario (anioActual, anioNacimiento) {
     return anioActual - anioNacimiento;
 } 
@@ -355,7 +356,7 @@ const ANIODENACIMIENTO = Number (prompt("Ingrese su año de nacimiento:"));
 let edad = calcularEdadUsuario(anioActual, ANIODENACIMIENTO);
 
 console.log("Usted tiene " + edad + " años");
-
+*/
 
 /*tarea 2
 -Preguntar el salario anual y calcular el salario mensual
@@ -577,6 +578,12 @@ console.log(
 //
 // No se olviden de hacer un console.log para ver el resultado!
 //
+
+
+
+
+
+
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
