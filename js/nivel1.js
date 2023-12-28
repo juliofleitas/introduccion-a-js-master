@@ -40,7 +40,7 @@
 
 // Tarea: Ahora te toca a vos! Acá abajo escribí una alerta que diga "Hola mundo!"
 
-alert('Hola mundo!');
+// alert('Hola mundo!');
 
 // Tarea: Una vez que la alerta funcione, comentala poniendo '//' en la línea donde está el código y guardá los cambios.
 // Una vez que recargás la página, ya no debería aparecer más.
@@ -103,6 +103,11 @@ alert('Hola mundo!');
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
 
+/*
+let numeroUno;
+let numeroDos;
+*/
+
 
 /*
     Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
@@ -113,8 +118,14 @@ alert('Hola mundo!');
     Esto va a mostrar un cartelito con el texto 'Hola Mundo!'
 */
 
+/*
+let saludo = 'Hola Mundo';
+alert(saludo);
+*/
+
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
 // mostralas con un alert.
+
 
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
@@ -126,6 +137,14 @@ alert('Hola mundo!');
 * alert(nombre + apellido)
 *
 * */
+
+/*
+let nombre = 'Julio';
+let edad = 37;
+alert('Mi nombre es ' + nombre + ' y mi edad es ' + edad);
+*/
+//alert(`${nombre} ${edad}`);
+
 
 
 /*
@@ -151,9 +170,14 @@ alert('Hola mundo!');
 
 // TAREA: Crear una constante y mostrarla con un alert
 
+/*
+const IVA = 21;
+alert(IVA)
+*/
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
 
+// IVA = 20;
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
 // que los alerts no aparezcan cada vez, y para que los errores no hagan que el programa se detenga.
@@ -184,6 +208,12 @@ alert('Hola mundo!');
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
+/*
+let diez = 10;
+let tres = 3;
+resultadoMultiplicacion = diez * tres;
+console.log(resultadoMultiplicacion); 
+*/
 
 /*
     Funciones
@@ -233,6 +263,21 @@ alert('Hola mundo!');
          }
 */
 
+/*
+function duplicar(numero) {
+    return numero * 2;
+};
+
+console.log(
+    duplicar(10)
+);
+
+console.log(
+    duplicar(5)
+);
+*/
+
+
 // TAREA: Es tu turno de crear una función!
 
 // Creá una función llamada 'sumar'
@@ -240,16 +285,139 @@ alert('Hola mundo!');
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+/*
+function sumar(numero1, numero2){
+    return numero1 + numero2;
+}
+
+console.log(
+    sumar(1,10)
+);
+*/
 
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
+
+/*
+function restar(numero1, numero2){
+    return numero1 - numero2;
+}
+
+console.log(
+    restar(5,1)
+);
+*/
 
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
+
+
+/*
+let anioNacimiento = 1986;
+let anioActual = 2023;
+
+let miEdad = restar (anioActual, anioNacimiento);
+console.log('Mi edad es ' + miEdad);
+
+let edadUsuario = prompt('Por favor, ingrese su edad', '30');
+*/
+
+/*
+function saludar(nombre) {
+    return 'Hola! ' + nombre;
+}
+
+let miNombre = prompt('Cual estu nombre?');
+console.log(
+    saludar(miNombre)
+);
+*/
+
+
+/* Tarea 1
+- Crear una función que tome como parámetro el año actual y el año de nacimiento y calcule la edad del usuario (más o menos).
+- Preguntarle estos datos al usuario y guardarlos en 2 variables.
+- Ejecutar la función con estos datos.
+- Imprimir el resultado en la consola.
+*/
+
+function calcularEdadUsuario (anioActual, anioNacimiento) {
+    return anioActual - anioNacimiento;
+} 
+
+let anioActual = Number (prompt("Ingrese el año actual: "));
+const ANIODENACIMIENTO = Number (prompt("Ingrese su año de nacimiento:"));
+
+let edad = calcularEdadUsuario(anioActual, ANIODENACIMIENTO);
+
+console.log("Usted tiene " + edad + " años");
+
+
+/*tarea 2
+-Preguntar el salario anual y calcular el salario mensual
+-Preguntar el salario mensual y calcular el salario anual, diario, semanal, por hora.
+*/
+
+
+let salarioAnual = Number(prompt('Cual es su salario anual'));
+const MESESDEUNANIO = 12;
+
+function calcularSalarioMensual(salarioAnual){
+  return salarioAnual / MESESDEUNANIO;
+};
+
+console.log("Si su salario anual es de " + salarioAnual + ' su salario mensual es de '+ calcularSalarioMensual(salarioAnual));
+
+/////////////////////
+
+let salarioMensual = Number(prompt('Cual es su salario mensual'));
+
+function calcularSalarioAnual(salarioMensual){
+  return salarioMensual * MESESDEUNANIO;
+};
+
+console.log('Si su salario mensual es de '+ salarioMensual + ' su salario anual sera de ' + calcularSalarioAnual(salarioMensual));
+
+/////////////////////
+
+const SEMANASDEUNMES = 4;
+function calcularSalarioSemanal(salarioMensual){
+  return salarioMensual / SEMANASDEUNMES;
+};
+
+console.log('Si su salario mensual es de '+ salarioMensual + ' su salario semanal sera de ' + calcularSalarioSemanal(salarioMensual));
+
+/////////////////////
+
+const DIASDEUNMES = 30;
+function calcularSalarioDiario(salarioMensual) {
+ return salarioMensual / DIASDEUNMES;
+}
+
+console.log(
+ "Si su salario mensual es de " +
+  salarioMensual +
+  " su salario diario sera de " +
+  calcularSalarioDiario(salarioMensual)
+);
+
+/////////////////////
+
+const HORASDEUNMES = 720;
+function calcularSalarioPorHora(salarioMensual) {
+ return salarioMensual / HORASDEUNMES;
+};
+
+console.log(
+ "Si su salario mensual es de " +
+  salarioMensual +
+  " su salario por hora sera de " +
+  calcularSalarioPorHora(salarioMensual)
+);
 
 /*
     Condicionales If-Else
