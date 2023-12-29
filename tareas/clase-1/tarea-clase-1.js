@@ -1,3 +1,4 @@
+/*
 // crear una función que tome como parámetro el año actual y el año de nacimiento
 // y calcule la edad del usuario (más o menos).
 // Preguntarle estos datos al usuario y guardarlos en 2 variables
@@ -43,6 +44,7 @@ const salarioAnual = Number(prompt('Cuál es tu salario mensual?'));
 console.log('Tu salario mensual es ' + calcularSalarioMensual(salarioAnual));
 console.log('Tu salario semanal es ' + calcularSalarioSemanal(salarioAnual));
 console.log('Tu salario diario es ' + calcularSalarioDiario(salarioAnual));
+*/
 
 /// SCOPE
 
@@ -67,7 +69,7 @@ function pruebaHoisting(){
 //pruebaHoisting();
 */
 
-/*
+
 var a = 1; //global
 let b = 2; //global
 
@@ -86,14 +88,18 @@ function prueba(c) { //c es un parámetro de la función prueba. LOCAL.
         console.log('f dentro del if vale: ' + f); // 6
     }
 
+
+    /*
     console.log('a dentro de la funcion pero fuera del if, vale: ' + a); // 1
     console.log('b dentro de la funcion pero fuera del if, vale: ' + b); // 2
     console.log('c dentro de la funcion pero fuera del if, vale: ' + c); // lo que sea que le pasen a prueba
     console.log('d dentro de la funcion pero fuera del if, vale: ' + d); // 4
     console.log('e dentro de la funcion pero fuera del if, vale: ' + e); // 5
     // console.log('f dentro de la funcion pero fuera del if, vale: ' + f); // error
+    */
 }
 
+/*
 prueba(3);
 
 console.log('a vale: ' + a); // 1
