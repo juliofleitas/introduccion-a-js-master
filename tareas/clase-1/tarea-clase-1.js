@@ -70,7 +70,7 @@ function pruebaHoisting(){
 */
 
 
-var a = 1; //global
+var  a = 1; //global
 let b = 2; //global
 
 function prueba(c) { //c es un parámetro de la función prueba. LOCAL.
@@ -89,19 +89,20 @@ function prueba(c) { //c es un parámetro de la función prueba. LOCAL.
     }
 
 
-    /*
+    
     console.log('a dentro de la funcion pero fuera del if, vale: ' + a); // 1
     console.log('b dentro de la funcion pero fuera del if, vale: ' + b); // 2
     console.log('c dentro de la funcion pero fuera del if, vale: ' + c); // lo que sea que le pasen a prueba
     console.log('d dentro de la funcion pero fuera del if, vale: ' + d); // 4
     console.log('e dentro de la funcion pero fuera del if, vale: ' + e); // 5
     // console.log('f dentro de la funcion pero fuera del if, vale: ' + f); // error
-    */
+    
 }
 
-/*
+
 prueba(3);
 
+/*
 console.log('a vale: ' + a); // 1
 console.log('b vale: ' + b); // 2
 // console.log('c vale: ' + c); // error
