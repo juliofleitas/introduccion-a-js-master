@@ -7,22 +7,16 @@
 // Imprimir "Hola " y el nombre, " te llamás igual que mi ..."
 // Si no, simplemente imprimir "Hola " + nombre!
 
-function compararNombres() {
-    const MI_NOMBRE = "francisco";
-    const NOMBRE_GATO = "nemo";
-  
-    let nombreUsuario = (prompt("Como te llamas?") || "").trim();
-  
-    if (nombreUsuario === MI_NOMBRE) {
-      alert(`Bienvenido Tocayo! Yo también me llamo ${MI_NOMBRE}`);
-    } else if (nombreUsuario === NOMBRE_GATO) {
-      alert(`Te llamas igual que mi gato ${NOMBRE_GATO}`);
-    } else if (isNaN(nombreUsuario)) {
-      alert("El nombre ingresado no es válido.");
-    } else {
-      alert(`Bienvenido, ${nombreUsuario}`);
-    }
-  }
+const MI_N0MBRE = 'Julio';
+const NOMBRE_NOVIA = 'Mary';
+
+const nombreUsuario = (prompt ("Como te llamas") || '').toLowerCase();
+
+if (MI_N0MBRE === nombreUsuario) {
+    console.log('Hola, tocayo! Yo también me llamo ${MI_NOMBRE}');
+} else if (NOMBRE_NOVIA === nombreUsuario) {
+    
+}
 
 //Tarea 2:
 // Preguntar la edad del usuario
